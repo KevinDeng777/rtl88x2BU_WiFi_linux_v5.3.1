@@ -27,7 +27,7 @@ gcc (Ubuntu 8.3.0-6ubuntu1) 8.3.0
 ## DKMS installation
 
 ```bash
-cd rtl88x2BU_WiFi_linux_v5.3.1_27678.20180430_COEX20180427-5959
+cd rtl88x2BU_WiFi_linux_v5.3.1
 VER=$(sed -n 's/\PACKAGE_VERSION="\(.*\)"/\1/p' dkms.conf)
 sudo rsync -rvhP ./ /usr/src/rtl88x2bu-${VER}
 sudo dkms add -m rtl88x2bu -v ${VER}
